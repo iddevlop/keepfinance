@@ -1,0 +1,282 @@
+/*
+* Please do not remove this
+* 30/04/2024
+* Template by CusMeDroid
+* IyoRTML
+* Suryo DwiJayanto
+*/
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+::-webkit-scrollbar-thumb {
+    background: #fdfdfd;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #fdfdfd;
+}
+.animate-fading {
+    animation:fading 10s infinite;
+}
+@keyframes fading {
+    0%{opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+.animate-opacity {
+    animation:opac 0.8s;
+}
+@keyframes opac {
+    from{opacity:0;}
+    to{opacity:1;}
+}
+.animate-top {
+    position:relative;animation:animatetop 0.4s;
+}
+@keyframes animatetop {
+    from{top:-300px;opacity:0;}
+    to{top:0;opacity:1;}
+}
+.animate-left {
+    position:relative;
+    animation:animateleft 0.4s;
+}
+@keyframes animateleft {
+    from{left:-300px;opacity:0;}
+    to{left:0;opacity:1;}
+}
+.animate-right {
+    position:relative;animation:animateright 0.4s;
+}
+@keyframes animateright {
+    from{right:-300px;opacity:0;}
+    to{right:0;opacity:1;}
+}
+.animate-bottom {
+    position:relative;animation:animatebottom 0.4s;
+}
+@keyframes animatebottom {
+    from{bottom:-300px;opacity:0;}
+    to{bottom:0;opacity:1;}
+}
+.animate-zoom {
+    animation:animatezoom 0.6s;
+}
+@keyframes animatezoom{
+    from{transform:scale(0);}
+    to{transform:scale(1);}
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #2EBF65;
+}
+
+header {
+    width: 100%;
+    background: #3F51B5;
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.mheader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.mheader img {
+    width: 48px;
+    height: 48px;
+}
+
+.mheader h2 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+header button {
+    background: #FFFFFF;
+    padding: 8px 16px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    color: #000000;
+}
+
+header button:hover {
+    background: #000000;
+    padding: 8px 16px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+.xspace {
+    background: #3F51B5;
+    height: 200px;
+}
+
+.main {
+    width: 100%;
+    margin-top: -200px;
+    padding: 14px;
+}
+
+.content {
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.xcontent {
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.content img {
+    width: 200px;
+    padding: 8px;
+}
+
+.xmk {
+    padding: 14px;
+}
+
+.xmk p {
+    text-align: justify;
+    white-space: pre-wrap;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column3 {
+    float: left;
+    width: 33.33%;
+}
+
+.fitur {
+    display: flex;
+}
+
+.screnshoot {
+    display: flex;
+}
+
+.xbag {
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.xxpks {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.xxpkss {
+    margin-left: 8px;
+}
+
+.xbag img {
+    width: 100%;
+}
+
+.xhga {
+    margin-top: 8px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #3F51B5;
+    color: #FFFFFF;
+    padding: 50px;
+    margin-top: 8px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .content {
+        display: block;
+    }
+    .content img {
+        width: 100%;
+    }
+    .column3 {
+        float: left;
+        width: 33.33%;
+    }
+    .fitur {
+        display: block;
+    }
+    .screnshoot {
+        display: block;
+    }
+    .xxpks {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .xxpkss {
+        margin-left: 0px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .xhga {
+        margin-top: 0px;
+    }
+}
